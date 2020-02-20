@@ -259,7 +259,7 @@ class Factory
 
         $parentClass = $model->getParentClass();
         $usedClasses = array_merge($usedClasses, $this->extractUsedClasses($parentClass));
-        $template = str_replace('{{parent}}', $parentClass, $template);
+        $template = str_replace('{{parent}}', $this->config($model->getBlueprint(), 'parent', ''), $template);
 
         $body = $this->body($model);
         $usedClasses = array_merge($usedClasses, $this->extractUsedClasses($body));
