@@ -6,7 +6,7 @@
 
 namespace {{namespace}};
 
-{{imports}}
+{{parent}}
 
 /**
  * Class {{class}}
