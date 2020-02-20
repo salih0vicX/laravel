@@ -387,6 +387,15 @@ return [
         'override_pluralize_for' => [
 
         ],
+        
+        /*
+        |--------------------------------------------------------------------------
+        | Disable inserting use keywords for referencing classes
+        |--------------------------------------------------------------------------
+        | When false, only parent class will be referenced (ex. use \App\Models\BaseModel)
+        */
+
+        'load_referencing_classes' => false
     ],
 
     /*
