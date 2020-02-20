@@ -6,15 +6,13 @@
 
 namespace {{namespace}};
 
-{{parent}}
-
 /**
  * Class {{class}}
  * {{properties}}
  *
  * @package {{namespace}}
  */
-class {{class}} extends {{parent}}
+class {{class}} extends \{{parent}}
 {
 {{body}}
 }
